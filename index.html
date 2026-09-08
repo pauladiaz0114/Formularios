@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Mesa de Ayuda - Soporte Tecnico</h1>
+    <form action="/guardar_registro" metod="POST">
+      <fieldset>
+        <legend>Datos del Solicitante</legend>
+        <label for="nombre">Nombre completo:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          pattern="[0-9]{8,11}"
+          title="Debe contener mas de 3 letras"
+          required
+        />
+        <br />
+        <br />
+        <label for="correo">Correo Institucional:</label>
+        <input type="text" id="correo" name="correo" minlength="3" required />
+        <br />
+        <br />
+        <label for="municipio">Sede / Municipio:</label>
+
+        <select name="municipio" id="municipio">
+          <option value="seleccione uno...">Seleccione una ubicacion</option>
+          <option value="Mosquera">Mosquera</option>
+          <option value="Bogota">Bogota</option>
+          <option value="madrid">Madrid</option>
+        </select>
+        <br />
+        <br />
+      </fieldset>
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>Detalles del Requirimiento</legend>
+        <h3>Tipo de Incidencia:</h3>
+        
+        <label class="label-inline"for="radio">Falla de Hardware / Daño fisico:
+
+        <input
+          type="radio"
+          id="falla de hardware"
+          name="incidencia"
+          value="falla de hardware"
+        
+        />
+        </label>
+        <label class="label-inline"for="radio">Falla de software / Actualizacion:
+        <input type="radio"
+        id="fallas de software"
+        name="falla de softwre"
+        value="falla de software"/>
+        </label>
+
+        <br />
+        <br />
+        <label>
+          <input type="checkbox" name=" terminos" required />
+          Marcar como prioridad ALTA
+        </label>
+        <br />
+        <br />
+        <button type="submit">Genenrar Ticket de soporte</button>
+      </fieldset>
+      <br />
+      <br />
+    </form>
+    <h1>Tickets Recientes</h1>
+    <table border="1px" class="tabla_registro">
+      <thead>
+      <tr>
+        <td>Ticket ID</td>
+        <td>Sede</td>
+        <td>Tipo</td>
+        <td>Estado</td>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>#TK-1045</td>
+        <td>Mosquera</td>
+        <td>Software</td>
+        <td>En Revision</td>
+      </tr>
+      <tr>
+        <td>#TK-1046</td>
+        <td>Bogota</td>
+        <td>Hardware</td>
+        <td>Pendientes Piezas</td>
+      </tr>
+      <tr>
+        <td>#TK-1047</td>
+        <td>Madrid</td>
+        <td>Hardware</td>
+        <td>Solucionado</td>
+      </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

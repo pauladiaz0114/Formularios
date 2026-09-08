@@ -1,0 +1,69 @@
+body {
+  font-family: "segoe UI", tahoma, geneva, verdana, sans-serif;
+  padding: 20px 40px;
+  color: #b2f3ff;
+}
+h1 {
+  color: #131246;
+  text-align: center;
+}
+
+
+fieldset {
+  background-color: #eceacd;
+  border: 2px solid #161a58;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+legend {
+  background-color: #161a58;
+  color: aliceblue;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #160d18;
+}
+label.label-inline {
+  display: inline;
+  font-weight: normal;
+  margin-top: 0;
+}
+input[type="text"], input[type="email"], selec {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #eba132;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 100%;
+}
+button:hover {
+  background-color: #e9832f;
+}
+.tabla_registro {
+  background-color: #ebeff7;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  color: #4a2c4e;
+}
+.tabla_registro th {
+  background-color: #d6e5fc;
+  color: #b876f5;
+}
